@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class TestBox3
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		Box b1=new Box(sc.nextDouble(),sc.nextDouble(),sc.nextDouble(),sc.next());	
+		Box newBox=new Box(sc.nextDouble(),sc.nextDouble(),sc.nextDouble(),sc.next());
+		if(b1.getComputedVolume()>newBox.getComputedVolume())
+			System.out.println(b1.getColor());
+			else
+				System.out.println(newBox.getColor());
+		sc.close();
+	}
+}
